@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 Exercise</title>
+</head>
+<body>
+    <a href="#" onclick="first()">First link</a>
+    <a href="" onclick="second()">Second link</a>
+    <a href=""  onclick="third()">Third link</a>
+
+    <!-- For the onclick event, we always use it inside the tags. Once you type onclick="", you need to mention the function that you are calling... 
+     e.g. <button onclick="alert('Hello')">Click me.</button> -->
+    <script>
+         function first() {
+            alert("Hi!");
+        }
+        function second() {
+            confirm("Are you well? Press OK to proceed or Cancel to close");
+        }function third() {
+            prompt("You sure you want to start? Click OK to start or Cancel to close this!");
+        }
+    </script>
+</body>
+</html>

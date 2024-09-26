@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+    <style>
+        p {
+            font-size: 16px;
+        }
+        body {
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Learning how to code is not as difficult as it seems.</p>
+    <p>It needs patience and lots of practice.</p>
+    <p>I am enjoying it.</p>
+    <!-- Creating the buttons so that when I click them, they can call my specified functions -->
+    <button onclick="changePar()">Click me</button>
+    <button onclick="surpriseMe()">Surprise!</button>
+    <button onclick="pickMe()">Change my size</button>
+    <script>
+        //This will change the sentence in the second paragraph to a new sentence.
+       function changePar() {
+        document.getElementsByTagName("p")[1].innerHTML = "Learn how to code with me!";
+       }
+       //This will change the colour of the first paragraph to red.
+       function surpriseMe() {
+           document.getElementsByTagName("p")[0].style.color = "red";
+       }
+       //This will change the last sentence to a larger size.
+       function pickMe() {
+           document.getElementsByTagName("p")[2].style.fontSize ="40px";
+       }
+    </script>
+</body>
+</html>

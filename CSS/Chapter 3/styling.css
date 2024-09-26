@@ -1,0 +1,31 @@
+/* Ensure the body takes up the full height of the viewport */
+/* body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+} */
+
+/* Container */
+#container {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+}
+
+/* Header and footer */
+#header, #footer {
+        width: 50vw;
+        height: 100vh;
+        background: purple; /*fall-back if gradients are not supported by browser*/
+        background-image: linear-gradient(blue, yellow  );
+}
+
+/* Main */
+#main {
+    padding: 15px;
+    border: 2px solid red;
+    background-color: green;
+}

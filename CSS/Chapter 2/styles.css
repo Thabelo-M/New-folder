@@ -1,0 +1,18 @@
+/* Styling the header */
+#header {
+    background-color: blue;
+    color: white;
+}
+/* Styling the footer */
+#footer {
+    background-color: black;
+    color: white;
+}
+/* Styling the main */
+#main .highlight {
+    color: red;
+    font-size: 18px;
+}
+#header h1 {
+    font-size: 24px;
+}

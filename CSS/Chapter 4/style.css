@@ -1,0 +1,15 @@
+.gradient-box {
+    width: 200%;
+    height: 200px;
+    background: linear-gradient(blue, green);
+    font-size: medium;
+    text-align: center;
+}
+.image-box {
+    width: 200%;
+    height: 200px;
+    background-image: url('https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4');
+    background-repeat: repeat-x;
+    font-size: medium;
+    text-align: center;
+}

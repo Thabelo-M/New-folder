@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of getElementsByTagName</title>
+</head>
+<body onclick="testing()">
+    <h1>Party Pizza Calculator</h1>
+    <label>Types of Pizza</label>
+    <input type="text" name="PizzaInput">
+    <br>
+    <label>Number of Pizza</label>
+    <input type="number" name="PizzaInput">
+    <br>
+    <button onclick="calculate()">Calculate total price!</button>
+    <script>
+       function calculate(){
+            var pizzaType = document.getElementsByName("PizzaInput")[0].value;
+            var pizzaAmount = Number(document.getElementsByName("PizzaInput")[1].value); // we use ".value" to read what the user has added in the input field
+            //1.To display in the browser:
+            document.getElementsByTagName("body")[0].innerHTML += "<h2> You have successfuly ordered " + pizzaAmount + " of " + pizzaType + "</h2>"; //+= you use it when you are adding something AND the <h2> to make it more 'nicer'
+            //2.To display in the console:
+            console.log("You have successfully ordered " + pizzaAmount + " of " + pizzaType);
+       }
+       function testing() {
+        document.getElementsByTagName("body")[0].style.color = "yellow";
+       }
+     </script>
+</body>
+</html>
